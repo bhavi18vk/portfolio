@@ -1,0 +1,161 @@
+:root {
+    --primary: #220781eb;
+    --bg-light: #dde4df;
+    --text-dark: #333;
+    --white: #ffffff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  
+  .hero {
+    background: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .navbar {
+    background: #444;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .section {
+    background: var(--white);
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  h2 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  
+  .cert-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .project {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  .skill {
+    margin-bottom: 1rem;
+  }
+  
+  .skill-bar {
+    background: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .skill-level {
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.5s ease-in-out;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input,
+  form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+  
+  form button {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #033064;
+  }
+  
+  .footer {
+    background: #eee;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .social-links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+    }
+  }  
